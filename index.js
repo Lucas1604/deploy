@@ -71,6 +71,6 @@ app.get('/users', (req, res) =>{
     res.send('Hello Users!');
 })
 
-app.listen(8888, () => {
+app.listen(3000, () => {
     console.log('Rodando com sucesso! :)')
 })
