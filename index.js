@@ -31,9 +31,14 @@ connection.connect(err => {
   })
 })
 
-app.get('/', (req, res) => {
-  res.send('Hello DevPleno!')
+// app.get('/', (req, res) => {
+//   res.send('Hello DevPleno!')
+// })
+
+app.get('/', (req, res) =>{
+    res.send('Hello Heroku!')
 })
+
 app.get('/contacts', (req, res) => {
   connection.query('select * from contacts', (err, rows) => {
     if (err) {
